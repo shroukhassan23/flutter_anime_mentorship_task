@@ -1,16 +1,17 @@
-# anime_flutter_project
+# Flutter Project - Clean Architecture
 
-A new Flutter project.
+This project is a **Flutter application with 3 main pages**, designed using **Clean Architecture (Layer-based folders)** to ensure clean code structure, scalability, and maintainability.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 App Pages
+1. **Page 1**: Home / Splash – entry point or welcome screen.  
+2. **Page 2**: Content / Details – displays list or detailed data.  
+3. **Page 3**: Settings / Profile – user settings or additional page.  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🏗️ Project Structure (Clean Architecture)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The project follows a **Layer-based folder structure**:
+
