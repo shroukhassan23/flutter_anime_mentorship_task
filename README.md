@@ -5,9 +5,9 @@ This project is a **Flutter application with 3 main pages**, designed using **Cl
 ---
 
 ## 📱 App Pages
-1. **Page 1**: Home / Splash – entry point or welcome screen.  
-2. **Page 2**: Content / Details – displays list or detailed data.  
-3. **Page 3**: Settings / Profile – user settings or additional page.  
+1. **Page 1**: Home / display list ofanime characters and work of each character.  
+2. **Page 2**: Details Screen / Details – displays detailed data.  
+3. **Page 3**: upgrade Plan .  
 
 ---
 
