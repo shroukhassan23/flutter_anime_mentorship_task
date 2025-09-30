@@ -8,7 +8,7 @@ This project is a **Flutter application with 3 main pages**, designed using **Cl
 1. **Page 1**: Home / display list ofanime characters and work of each character.  
 2. **Page 2**: Details Screen / Details – displays detailed data.  
 3. **Page 3**: upgrade Plan .  
-
+demo video in ./assets
 ---
 
 ## 🏗️ Project Structure (Clean Architecture)
