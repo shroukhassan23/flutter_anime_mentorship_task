@@ -326,7 +326,7 @@ class _ThirdScreenState extends State<ThirdScreen> {
                     bottom: 0,
                     child: Row(
                       children: [
-                        SizedBox(width: 20),
+                        SizedBox(width: 10),
                         Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: TextButton(

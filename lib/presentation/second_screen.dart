@@ -1,3 +1,4 @@
+import 'package:anime_flutter_project/presentation/third_screen.dart';
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {
@@ -47,9 +48,10 @@ class SecondScreen extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 20),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(left: 30, right: 10),
+                            padding: const EdgeInsets.only(left: 50, right: 5),
                             child: Container(
                               decoration: BoxDecoration(
                                 color: const Color.fromARGB(158, 141, 137, 152),
@@ -164,7 +166,7 @@ class SecondScreen extends StatelessWidget {
                               ),
                               SizedBox(width: 4),
                               Image.asset(
-                                "assets/icons/movie.png",
+                                "assets/images/movie.png",
                                 width: 20,
                                 height: 20,
                               ),
@@ -251,7 +253,15 @@ class SecondScreen extends StatelessWidget {
                             ),
                             //  SizedBox(width: 30),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (context) {
+                                      return ThirdScreen();
+                                    },
+                                  ),
+                                );
+                              },
                               child: Row(
                                 children: [
                                   Image.asset("assets/icons/eye.png"),

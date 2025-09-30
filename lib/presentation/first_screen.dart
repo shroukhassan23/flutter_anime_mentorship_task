@@ -1,6 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:anime_flutter_project/presentation/second_screen.dart';
 import 'package:anime_flutter_project/presentation/widgets/anime_char_circle.dart';
 import 'package:anime_flutter_project/presentation/widgets/anime_characters.dart';
+import 'package:anime_flutter_project/presentation/widgets/custom_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 
@@ -73,14 +75,14 @@ class FirstScreen extends StatelessWidget {
                               characterWork: "One Piece",
                             ),
                             AnimeCharactersInCircles(
-                              imagePath: "assets/images/anime.jpg",
-                              characterName: "Luffy",
-                              characterWork: "One Piece",
+                              imagePath: "assets/images/conan.jpg",
+                              characterName: "Conan Edogawa",
+                              characterWork: "Detective Conan",
                             ),
                             AnimeCharactersInCircles(
                               imagePath: "assets/images/anime.jpg",
-                              characterName: "Luffy",
-                              characterWork: "One Piece",
+                              characterName: "Goku",
+                              characterWork: "Dragon Bali",
                             ),
                           ],
                         ),
@@ -92,37 +94,7 @@ class FirstScreen extends StatelessWidget {
             ),
           ],
         ),
-        bottomNavigationBar: SalomonBottomBar(
-          currentIndex: 0,
-          onTap: (i) => print(i),
-          items: [
-            SalomonBottomBarItem(
-              icon: Icon(Icons.home),
-              title: Text("Home"),
-              selectedColor: Color.fromARGB(255, 214, 0, 0),
-            ),
-            SalomonBottomBarItem(
-              icon: Icon(Icons.book),
-              title: Text("Library"),
-              selectedColor: Color.fromARGB(255, 83, 54, 248),
-            ),
-            SalomonBottomBarItem(
-              icon: Icon(Icons.search),
-              title: Text("Search"),
-              selectedColor: Color(0xFF5436F8),
-            ),
-            SalomonBottomBarItem(
-              icon: Icon(Icons.language),
-              title: Text("Explore"),
-              selectedColor: Color(0xFF5436F8),
-            ),
-            SalomonBottomBarItem(
-              icon: Icon(Icons.settings),
-              title: Text("Settings"),
-              selectedColor: Color(0xFF5436F8),
-            ),
-          ],
-        ),
+        bottomNavigationBar: CustomBottomBar(),
       ),
     );
   }
@@ -147,11 +119,7 @@ class AnimeCharactersList extends StatelessWidget {
             characterName: 'Hunter x Hunter',
             characterWork: 'Adventure',
           ),
-          AnimeCharacters(
-            imagePath: "assets/images/anime2.png",
-            characterName: 'Hunter x Hunter',
-            characterWork: 'Adventure',
-          ),
+
           AnimeCharacters(
             imagePath: "assets/images/anime3.jpg",
             characterName: 'Dragon BallZ',
@@ -209,6 +177,7 @@ class ScrollingFilters extends StatelessWidget {
             text: "Top Rated",
             textColor: Color(0XFF5436F8),
           ),
+          SizedBox(width: 4),
           listofButtons(
             color: Color.fromARGB(255, 255, 255, 255),
             text: "Upcoming",
